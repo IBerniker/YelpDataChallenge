@@ -30,4 +30,7 @@ def loadData():
 	with open(DATA_DIR+'yelp_academic_dataset_checkin-cleaned.json') as f:
 		checkins = json.loads(f.read())
 
-	with open(DATA_DIR + 'yelp_academic_dataset-')
+	with open(DATA_DIR + 'yelp_academic_dataset_business-cleaned.json') as f:
+		businesses = json.loads(f.read())
+
+	return (checkins, businesses)
